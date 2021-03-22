@@ -2,13 +2,13 @@ version: "3"
   
 services:
   backend:
-    image: snakecharmer/backend:latest
+    image: snakecharmer2021/backend:latest
     build: ./spring-petclinic-rest
     ports:
     - "9966:9966"
 
   frontend:
-    image: snakecharmer/frontend:latest
+    image: snakecharmer2021/frontend:latest
     build: ./spring-petclinic-angular
     ports:
     - "8080:8080"
