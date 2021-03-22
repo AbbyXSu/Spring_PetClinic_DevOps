@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: backend
+spec:
+  containers:
+    - name: backend
+      image: snakecharmer2021/backend:latest
+      ports:
+        - protocol: TCP
+          containerPort: 9966
