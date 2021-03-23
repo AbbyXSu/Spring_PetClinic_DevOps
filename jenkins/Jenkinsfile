@@ -3,7 +3,7 @@ pipeline{
     tools {
         maven 'Maven 3.6.3'
         jdk 'jdk9'
-        node 'Node 15.1'
+        node 'node-15.1'
     }
     stages {
         stage('Test Backend') {
