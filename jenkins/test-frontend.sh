@@ -4,8 +4,8 @@ cd spring-petclinic-angular
 sudo apt install -y npm
 npm install karma
 npm install -i
-sudo npm test
 sudo npm i karma karma-chrome-launcher chromium
 export CHROME_BIN="/usr/local/lib/node_modules/chromium"
+sudo npm test
 cd ..
 sudo rm -rf spring-petclinic-angular
