@@ -5,21 +5,21 @@ pipeline {
         stage('Test Backend') {
             steps {
                 script{
-                        sh 'bash ./test-backend.sh'
+                        sh 'bash jenkins/test-backend.sh'
                     }
             }
         }
         stage('Test Frontend') {
             steps {
                 script{
-                        sh 'bash ./test-frontend.sh'
+                        sh 'bash jenkins/test-frontend.sh'
                     }                
             }
         }
         stage('Build Docker') {
             steps {
                 script {                         
-                        sh 'bash ./build_images.sh'                     
+                        sh 'bash jenkins/build_images.sh'                     
                     }                     
             }
         }
