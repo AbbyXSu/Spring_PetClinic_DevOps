@@ -1,34 +1,26 @@
 pipeline {
     agent any
-environment {
 
-    }
     stages {
         stage('Test Backend') {
             steps {
-                script{ 
-                    if (env.rollback == 'false'){
+                script{
                         sh 'bash ./test-backend.sh'
                     }
-                }
             }
         }
         stage('Test Frontend') {
             steps {
-                script{ 
-                    if (env.rollback == 'false'){
+                script{
                         sh 'bash ./test-frontend.sh'
                     }                
-                }
             }
         }
         stage('Build Docker') {
             steps {
-                script {         
-                    if (env.rollback == 'false'){                         
+                script {                         
                         sh 'bash ./build_images.sh'                     
                     }                     
-                }
             }
         }
     }
