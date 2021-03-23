@@ -16,7 +16,9 @@ pipeline{
         stage('Test Frontend') {
             steps {
                 script {
+                    nodejs(nodeJSInstallationName: 'Node 6.x', configId: '<config-file-provider-id>') {
                         sh 'bash jenkins/test-frontend.sh'
+                    }
                 }
             }
         }
