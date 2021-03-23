@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script{ 
                     if (env.rollback == 'false'){
-                        sh 'bash jenkins/test-backend.sh'
+                        sh 'bash ./test-backend.sh'
                     }
                 }
             }
@@ -15,7 +15,7 @@ pipeline {
             steps {
                 script{ 
                     if (env.rollback == 'false'){
-                        sh 'bash jenkins/test-frontend.sh'
+                        sh 'bash ./test-frontend.sh'
                     }                
                 }
             }
@@ -24,7 +24,7 @@ pipeline {
             steps {
                 script {         
                     if (env.rollback == 'false'){                         
-                        sh 'bash jenkins/build_images.sh'                     
+                        sh 'bash ./build_images.sh'                     
                     }                     
                 }
             }
