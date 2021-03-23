@@ -1,31 +1,25 @@
-pipeline {
+pipeline{
     agent any
 
     stages {
         stage('Test Backend') {
             steps {
-                script{ 
-                    if (env.rollback == 'false'){
+                script {
                         sh 'bash jenkins/test-backend.sh'
-                    }
                 }
             }
         }
         stage('Test Frontend') {
             steps {
-                script{ 
-                    if (env.rollback == 'false'){
+                script {
                         sh 'bash jenkins/test-frontend.sh'
-                    }                
                 }
             }
         }
         stage('Build Docker') {
             steps {
-                script {         
-                    if (env.rollback == 'false'){                         
-                        sh 'bash jenkins/build_images.sh'                     
-                    }                     
+                script {
+                        sh 'bash jenkins/build_images.sh'
                 }
             }
         }
