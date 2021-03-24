@@ -3,13 +3,13 @@ kind: ConfigMap
 metadata:
   name: nginx-config
 data:
-  nginx.conf: |
+  default.conf: |
     server {
       listen 80;
       location / {
-        proxy_pass http://127.0.0.1:8080;
+        proxy_pass http://frontend:8080;
       }
       location /petclinic/api {
-        proxy_pass http://127.0.0.1:9966;
+        proxy_pass http://backend:9966;
       }
     }
