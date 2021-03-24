@@ -5,6 +5,8 @@ cd spring-petclinic-angular
 npm install --save-dev @angular/cli@8.0.3
 npm install --save-dev @angular-devkit/build-angular
 npm install -i
-sudo npm test --watch false
+#sudo npm test
+ng build
+ng test --karma-config karma.conf.js --watch=false
 cd ..
 sudo rm -rf spring-petclinic-angular
