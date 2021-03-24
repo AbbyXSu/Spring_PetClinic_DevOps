@@ -1,6 +1,10 @@
 pipeline{
     agent any
-
+    tools {
+        maven 'Maven 3.6.3'
+        jdk 'jdk9'
+        nodejs 'node 15.11'
+    }
     stages {
         stage('Test Backend') {
             steps {
@@ -12,7 +16,9 @@ pipeline{
         stage('Test Frontend') {
             steps {
                 script {
+                    nodejs(nodeJSInstallationName: 'node 15.11') {
                         sh 'bash jenkins/test-frontend.sh'
+                    }
                 }
             }
         }
