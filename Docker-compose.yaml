@@ -12,3 +12,9 @@ services:
     build: ./spring-petclinic-angular
     ports:
     - "8080:8080"
+  nginx:
+    image: snakecharmer2021/nginx
+    build: ./kubernetes/nginx
+    ports:
+      - 80:80
+    container_name: nginx
