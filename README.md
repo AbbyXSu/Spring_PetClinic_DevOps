@@ -50,9 +50,22 @@ Below shows my continuous integration (CI) pipeline depicting how the various to
 
 ## Docker
 
+Docker was chosen to be used as the containerisation tool as we felt the most comfortable using this tool having used it previously in our second individual projects as well as it being a well utilised tool within the tech industry. A significant benefit of using Docker is that the docker images having compatibility to orchestration tools such as Kubernetes which allows for a smooth deployment. 
+
 ## Kubernetes
 
+Kubernetes was used as the orchestration tool due to many reasons. One of the main reasons being that Kubernetes is compatible with Docker images as previously mentioned. The requirement of the project was to use AWS (Amazon Web Services) and Elastic Kubernetes Service (EKS) is an existing service within AWS, therefore, it was convenient to use Kubernetes. Kubernetes is also able to integrate with other services such as NGINX, load balancing service. We configured a NGINX service to balance the traffic coming into the website. 
+
+## Terraform
+
+Terraform was used to build the infrastructure on AWS (Amazon Web Services) due to its ability to automate the process of building the infrastructure necessary to run the application. As a result of doing so, we were able to automatically build the EC2 instance, VPC, subnets, security groups, etc which drastically makes the process more efficient by reducing the time of deployment vastly.
+
 ## Possible Improvements
+
+* Terraform does not build our node groups first time therefore two terraform stages in this project would have been beneficial
+* Our Cloudwatch Dashboard does not connect automatically with our new cluster
+* Network ACLs - Amazon Virtual Private Cloud settings are exposed to the world which poses security risks
+
 
 ## Contributors
 - Abby Su (https://github.com/AbbyXSu)
