@@ -37,6 +37,8 @@ The following table summarises the main issues associated with a project. The ri
 
 Below shows my continuous integration (CI) pipeline depicting how the various tools were used in this project:
 
+![CI pipeline final project1](https://user-images.githubusercontent.com/77278616/112536343-42840280-8da5-11eb-9043-41bc9d9d35d4.jpg)
+
 * Kanban Board: Trello
 * Version Control: Git/Github
 * CI Server: Jenkins
