@@ -26,6 +26,10 @@ Link to Kanban Board: https://trello.com/b/51CjhFpy/final-project
 
 ## Risk Assessment
 
+The following table summarises the main issues associated with a project. The risk assessment offers possible solutions towards resolving the issues. 
+<br>
+![Screenshot 2021-03-25 at 19 46 04](https://user-images.githubusercontent.com/62849876/112534285-c7b9e800-8da2-11eb-9c73-0dd65f5ebc72.png)
+
 ## CI/CD Pipeline
 
 Below shows my continuous integration (CI) pipeline depicting how the various tools were used in this project:
