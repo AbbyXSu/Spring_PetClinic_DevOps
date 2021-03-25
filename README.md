@@ -66,6 +66,10 @@ Kubernetes was used as the orchestration tool due to many reasons. One of the ma
 
 Terraform was used to build the infrastructure on AWS (Amazon Web Services) due to its ability to automate the process of building the infrastructure necessary to run the application. As a result of doing so, we were able to automatically build the EC2 instance, VPC, subnets, security groups, etc which drastically makes the process more efficient by reducing the time of deployment vastly.
 
+## Functioning front-end
+
+![image](https://user-images.githubusercontent.com/77278616/112543299-76fbbc80-8dad-11eb-8ac0-88c4d0545b49.png)
+
 ## Possible Improvements
 
 * Terraform does not build our node groups first time therefore two terraform stages in this project would have been beneficial
@@ -81,3 +85,5 @@ Terraform was used to build the infrastructure on AWS (Amazon Web Services) due 
 - Bora Kim (https://github.com/Kimovi)
 
 ## Acknowledgements
+
+We thank the QA Training Academy for providing us with the tools and frameworks to successfully implement the project.
