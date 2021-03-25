@@ -1,4 +1,4 @@
-# Spring_PetClinic_DevOps -QA Final Project 
+# Spring PetClinic DevOps Project           
 
 *	Project Brief
 * Project Planning
