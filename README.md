@@ -28,6 +28,17 @@ Link to Kanban Board: https://trello.com/b/51CjhFpy/final-project
 
 ## CI/CD Pipeline
 
+Below shows my continuous integration (CI) pipeline depicting how the various tools were used in this project:
+
+* Kanban Board: Trello
+* Version Control: Git/Github
+* CI Server: Jenkins
+* Infrastructure Management: Terraform
+* Cloud server: Amazon Web Services (AWS)
+* Containerisation: Docker
+* Orchestration Tool: Kubernetes
+* Reverse Proxy: NGINX
+
 ## Docker
 
 ## Kubernetes
