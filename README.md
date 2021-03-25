@@ -21,8 +21,11 @@ During the completion of the project, the running costs to deploy the applicatio
 In the initial phase of the project, we allocated time to understand the project brief as well as researching the tools and technologies required for the deployment of the application. We then created a Kanban board which helped us assign roles to each team member, this helped us in being productive and meet our targets.
 
 We had daily stand-ups at the start of the day to get up to speed about any progress that was made from the previous day and to discuss the plan for the day. 	We reviewed our Kanban board and sprint burning-down chart frequently to ensure we maximised productivity and did not go outside of the budget. When any of the team were feeling stressed on completing their tasks, we often worked together to resolve the problem which ensured we were able to meet our daily milestones. The Kanban board and agile methodology were both vital in the competition of the successful project.
-
+<br>
+![Screenshot 2021-03-25 at 19 59 34](https://user-images.githubusercontent.com/62849876/112536117-f9cc4980-8da4-11eb-9960-a1d3376ea007.png)
+<br>
 Link to Kanban Board: https://trello.com/b/51CjhFpy/final-project
+
 
 ## Risk Assessment
 
