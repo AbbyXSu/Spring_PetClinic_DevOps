@@ -3,8 +3,6 @@ pipeline{
         environment {
         AWS_ACCESS_KEY_ID = credentials('ACCESS_KEY')
         AWS_SECRET_ACCESS_KEY = credentials('SECRET_ACCESS_KEY')
-        DOCKER_USERNAME = credentials('DOCKER_USERNAME')
-        DOCKER_PASSWORD = credentials('DOCKER_PASSWORD')
     }
     tools {
         maven 'Maven 3.6.3'
