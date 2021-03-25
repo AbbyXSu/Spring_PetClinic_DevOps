@@ -1,22 +1,42 @@
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name:  backend
+  name: backend
   labels:
     app: backend
+
 spec:
-  replicas: 1
   selector:
     matchLabels:
       app: backend
+  replicas: 2
+
   template:
     metadata:
+      name: backend
       labels:
-        app: backend 
+        app: backend
     spec:
       containers:
       - name: backend
-        image: snakecharmer2021/backend:latest
+        image: snakecharmer2021/backend
+        imagePullPolicy: Always
         ports:
-          - protocol: TCP
-            containerPort: 9966
+        - containerPort: 9966
+
+      imagePullSecrets:
+        - name: regcred
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend
+spec:
+  selector:
+    app: backend
+  ports:
+  - port: 9966
+    targetPort: 9966
+    protocol: TCP
+  type: ClusterIP
