@@ -3,7 +3,7 @@ aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
 aws configure set region eu-west-2
 aws configure set output json
 
-aws eks --region eu-west-2 update-kubeconfig --name eks_cluster_tuto
+aws eks --region eu-west-2 update-kubeconfig --name eks_cluster_tuto2
 
 #start deployment and service 
 cd kubernetes
