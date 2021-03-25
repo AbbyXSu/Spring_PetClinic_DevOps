@@ -68,6 +68,8 @@ Terraform was used to build the infrastructure on AWS (Amazon Web Services) due 
 
 ## Functioning front-end
 
+![working front-end](https://user-images.githubusercontent.com/77278616/112544010-6d268900-8dae-11eb-8092-812a3c731bbb.jpg)
+
 ![image](https://user-images.githubusercontent.com/77278616/112543299-76fbbc80-8dad-11eb-8ac0-88c4d0545b49.png)
 
 ## Possible Improvements
