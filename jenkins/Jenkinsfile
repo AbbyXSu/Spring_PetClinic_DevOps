@@ -1,5 +1,9 @@
 pipeline{
     agent any
+        environment {
+        AWS_ACCESS_KEY_ID = credentials('ACCESS_KEY')
+        AWS_SECRET_ACCESS_KEY = credentials('SECRET_ACCESS_KEY')
+    }
     tools {
         maven 'Maven 3.6.3'
         jdk 'jdk9'
@@ -22,10 +26,10 @@ pipeline{
                 }
             }
         }
-        stage('Build Docker') {
+       stage('Deploy') {
             steps {
                 script {
-                        sh 'bash jenkins/build_images.sh'
+                        sh 'bash jenkins/deploy.sh'
                 }
             }
         }
