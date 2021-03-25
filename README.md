@@ -20,7 +20,7 @@ The purpose of the project is to utilise a series of tools and frameworks in ord
 **Step 2** was to create Docker-Compose, Terraform and Kubernetes files <br>
 **Step 3** was to configure the application using EKS and deploying it on the AWS <br>
 
-During the completion of the project, the running costs to deploy the application was also tracked which includes a graph of the monthly estimates for running the services.
+During the completion of the project, the running costs to deploy the application was also tracked which includes a graph of the monthly estimates for running the services, which can be found in **costs.md** file. 
 
 ## Project Planning
 
