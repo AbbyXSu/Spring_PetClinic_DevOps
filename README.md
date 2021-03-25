@@ -16,9 +16,9 @@ The purpose of the project is to utilise a series of tools and frameworks in ord
 <br>
 ![Screenshot 2021-03-25 at 20 30 06](https://user-images.githubusercontent.com/62849876/112539580-123e6300-8da9-11eb-95a4-b74c80ee72b9.png)
 <br>
-Step 1 was to git clone from two dedicated repositories<br>
-Step 2 was to create Docker-Compose, Terraform and Kubernetes files <br>
-Step 3 was to configure the application using EKS and deploying it on the AWS <br>
+**Step** 1 was to git clone from two dedicated repositories<br>
+**Step 2** was to create Docker-Compose, Terraform and Kubernetes files <br>
+**Step 3** was to configure the application using EKS and deploying it on the AWS <br>
 
 During the completion of the project, the running costs to deploy the application was also tracked which includes a graph of the monthly estimates for running the services.
 
